@@ -1,4 +1,4 @@
-package com.insel.strings;
+package com.insel.chapter5;
 
 import java.util.Date;
 import java.util.StringJoiner;

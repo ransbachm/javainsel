@@ -1,4 +1,4 @@
-package com.insel.classes;
+package com.insel.chapter6;
 
 import java.io.*;
 

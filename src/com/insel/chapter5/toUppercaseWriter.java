@@ -1,4 +1,4 @@
-package com.insel.strings;
+package com.insel.chapter5;
 
 public class toUppercaseWriter {
 	public static void main (String[] args) {

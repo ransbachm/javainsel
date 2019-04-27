@@ -1,11 +1,11 @@
-package com.insel.classes2;
+package com.insel.chapter7;
 
 public class Main {
 	
 	private Main() {}
 	
 	public static void main(String [] args) {
-		Main m = new Main();
+		//Empty here ... there will be stuff added
 	}
 	
 

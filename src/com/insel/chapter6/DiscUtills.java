@@ -1,4 +1,4 @@
-package com.insel.classes;
+package com.insel.chapter6;
 
 
 //This should not be used, its just to test static functions
