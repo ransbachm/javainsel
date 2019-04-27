@@ -1,4 +1,4 @@
-package com.insel.chapter7;
+package com.insel.chapter6;
 
 public class Main {
 	

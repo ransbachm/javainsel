@@ -1,6 +1,6 @@
 
 
-package com.insel.chapter5;
+package com.insel.chapter4;
 
 import java.io.File;
 import java.util.Scanner;

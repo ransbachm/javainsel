@@ -1,4 +1,4 @@
-package com.insel.chapter6;
+package com.insel.chapter5;
 
 class Player {
 	
