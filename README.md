@@ -1,2 +1,2 @@
 # javainsel
-Ich versuche Java zu lernen und lasse hier mein Test Programme liegen.
+Ich versuche Java zu lernen und lasse hier meine test Programme liegen.
