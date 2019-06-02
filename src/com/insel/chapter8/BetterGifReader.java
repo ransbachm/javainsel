@@ -11,7 +11,7 @@ public class BetterGifReader {
 		RandomAccessFile f = null;
 		
 		try {
-			f = new RandomAccessFile("C:\\MyF" , "r");
+			f = new RandomAccessFile("C:\\MyF\\GifExample1.gif" , "r");
 			f.seek(6);
 			
 			//Calculates the height from the data read from the file

@@ -11,7 +11,7 @@ public class SimpleGifReader { //CALC HEIGHT AND WIDTH OF GIF --WIDTH ((BYTE 6) 
 	
 	public static void main(String [] args) throws FileNotFoundException, IOException {
 		
-		RandomAccessFile f = new RandomAccessFile("C:\\MyF\\example.gif", "r");
+		RandomAccessFile f = new RandomAccessFile("C:\\MyF\\GifExample1.gif", "r");
 		f.seek(6);
 		
 		
