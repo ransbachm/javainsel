@@ -1,8 +1,11 @@
 package com.insel.chapter8;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
+
+import com.insel.util.ResHelper;
 
 public class TryFinallyGifReader {
 	
@@ -13,7 +16,9 @@ public class TryFinallyGifReader {
 	
 	public static void printGifSize(String filename) throws FileNotFoundException, IOException {
 		
-		RandomAccessFile f = new RandomAccessFile("C:\\MyF\\GifExample1.gif", "r");
+		File file = new File(ResHelper.class.getResource("GifExample.gif").getFile());
+		RandomAccessFile f = new RandomAccessFile(file, "r");
+		
 		try {
 			f.seek(6);
 			String width = Integer.toString((f.read() + f.read()*256));

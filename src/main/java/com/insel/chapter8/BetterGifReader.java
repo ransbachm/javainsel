@@ -1,8 +1,11 @@
 package com.insel.chapter8;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
+
+import com.insel.util.ResHelper;
 
 public class BetterGifReader {
 	
@@ -11,7 +14,9 @@ public class BetterGifReader {
 		RandomAccessFile f = null;
 		
 		try {
-			f = new RandomAccessFile("C:\\MyF\\GifExample1.gif" , "r");
+			
+			File file = new File(ResHelper.class.getResource("GifExample.gif").getFile());
+			f = new RandomAccessFile(file, "r");
 			f.seek(6);
 			
 			//Calculates the height from the data read from the file

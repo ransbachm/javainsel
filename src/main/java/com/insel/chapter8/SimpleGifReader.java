@@ -1,8 +1,11 @@
 package com.insel.chapter8;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
+
+import com.insel.util.ResHelper;
 
 
 public class SimpleGifReader { //CALC HEIGHT AND WIDTH OF GIF --WIDTH ((BYTE 6) + ((BYTE 7) * 256)) for HEIGHT USE BYTE 8 and 9
@@ -11,7 +14,8 @@ public class SimpleGifReader { //CALC HEIGHT AND WIDTH OF GIF --WIDTH ((BYTE 6) 
 	
 	public static void main(String [] args) throws FileNotFoundException, IOException {
 		
-		RandomAccessFile f = new RandomAccessFile("C:\\MyF\\GifExample1.gif", "r");
+		File file = new File(ResHelper.class.getResource("GifExample.gif").getFile());
+		RandomAccessFile f = new RandomAccessFile(file, "r");
 		f.seek(6);
 		
 		
