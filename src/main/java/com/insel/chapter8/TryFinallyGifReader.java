@@ -16,7 +16,7 @@ public class TryFinallyGifReader {
 	
 	public static void printGifSize(String filename) throws FileNotFoundException, IOException {
 		
-		File file = new File(ResHelper.class.getResource("GifExample.gif").getFile());
+		File file = new File(ResHelper.class.getClassLoader().getResource("GifExample1.gif").getFile());
 		RandomAccessFile f = new RandomAccessFile(file, "r");
 		
 		try {

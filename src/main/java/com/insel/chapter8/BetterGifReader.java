@@ -15,7 +15,7 @@ public class BetterGifReader {
 		
 		try {
 			
-			File file = new File(ResHelper.class.getResource("GifExample.gif").getFile());
+			File file = new File(ResHelper.class.getClassLoader().getResource("GifExample1.gif").getFile());
 			f = new RandomAccessFile(file, "r");
 			f.seek(6);
 			
