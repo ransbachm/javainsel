@@ -1,9 +1,5 @@
 package com.insel.chapter4;
 
-import java.io.File;
-import java.util.LinkedList;
-import java.util.Scanner;
-
 public class FormatTest {
 	
 	public static void main (String ... args) {

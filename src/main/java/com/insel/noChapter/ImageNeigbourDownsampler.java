@@ -1,11 +1,8 @@
 package com.insel.noChapter;
 
-import java.awt.List;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-
 import javax.imageio.ImageIO;
 
 public class ImageNeigbourDownsampler {

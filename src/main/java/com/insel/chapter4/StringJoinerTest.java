@@ -1,6 +1,5 @@
 package com.insel.chapter4;
 
-import java.util.Date;
 import java.util.StringJoiner;
 
 public class StringJoinerTest {
