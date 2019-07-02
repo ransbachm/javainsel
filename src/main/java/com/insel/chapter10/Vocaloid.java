@@ -19,6 +19,14 @@ public class Vocaloid {
 		this.firstLetter = firstLetter;
 		this.dateThatIFoundInWikiInUnixTime = date;
 	}
+	Vocaloid(Vocaloid oV) {
+		this.no = oV.no;
+		this.likesLeek = oV.likesLeek;
+		this.color = oV.color;
+		this.height = oV.height;
+		this.firstLetter = oV.firstLetter;
+		this.dateThatIFoundInWikiInUnixTime = oV.dateThatIFoundInWikiInUnixTime;
+	}
 	
 	
 	@Override public int hashCode () {
