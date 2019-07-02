@@ -79,13 +79,17 @@ public class Vocaloid implements Cloneable {
 		Vocaloid rin = new Vocaloid(02, false, Color.orange, 1.52, 'R', 1190844000);
 		Vocaloid len = new Vocaloid(02, false, Color.yellow, 1.56, 'L', 1190844000);
 		
+		Vocaloid rin2 = new Vocaloid(rin);
+		Vocaloid miku2 = miku.clone();
 		
 		
 		System.out.printf("Hash Codes:%nMiku %s%nRin %s%nLen %s%n%n", miku.hashCode(), rin.hashCode(), len.hashCode());
 		System.out.printf("Miku == Miku : %b%n", miku.equals(miku));
-		System.out.printf("Miku == Rin :  %b%n", miku.equals(rin));
-		System.out.printf("Rin == Miku :  %b%n", rin.equals(miku));
-		System.out.printf("Len == Rin :  %b", len.equals(rin)); //Irgendwie schon...
+		System.out.printf("Miku == Rin : %b%n", miku.equals(rin));
+		System.out.printf("Rin == Miku : %b%n", rin.equals(miku));
+		System.out.printf("Len == Rin : %b%n", len.equals(rin)); //Irgendwie schon...
+		System.out.printf("Rin2 == Rin : %b%n", rin2.equals(rin));
+		System.out.printf("Miku2 == Rin2 : %b%n", miku2.equals(rin2));
 		
 		
 	}
