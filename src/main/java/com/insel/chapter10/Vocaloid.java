@@ -2,7 +2,7 @@ package com.insel.chapter10;
 
 import java.awt.Color;
 
-public class Vocaloid {
+public class Vocaloid implements Cloneable {
 	
 	int no;
 	boolean likesLeek;
@@ -66,6 +66,14 @@ public class Vocaloid {
 		return false;
 	}
 	
+		@Override public Vocaloid clone() {
+			try {
+				return (Vocaloid) super.clone();
+			} catch (CloneNotSupportedException e) {
+				throw new InternalError();
+			}
+		}
+		
 	public static void main(String [] args) {
 		Vocaloid miku = new Vocaloid(01, true, Color.cyan, 1.58, 'M', 1188511200);
 		Vocaloid rin = new Vocaloid(02, false, Color.orange, 1.52, 'R', 1190844000);
