@@ -58,7 +58,7 @@ public class Vocaloid implements Cloneable {
 		
 		if(oV.no == this.no)
 			if(oV.likesLeek == this.likesLeek)
-				if(oV.color == this.color)
+				if(oV.color.equals(this.color))
 					if(oV.height == this.height)
 						if(oV.firstLetter == this.firstLetter)
 							if(oV.dateThatIFoundInWikiInUnixTime == this.dateThatIFoundInWikiInUnixTime)
