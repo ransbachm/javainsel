@@ -66,6 +66,10 @@ public class Vocaloid implements Cloneable {
 		return false;
 	}
 	
+	@Override public String toString() {
+		return ("Vocaloid: [no:"+no+"]["+firstLetter+"]["+height+"]");
+	}
+	
 		@Override public Vocaloid clone() {
 			try {
 				return (Vocaloid) super.clone();
