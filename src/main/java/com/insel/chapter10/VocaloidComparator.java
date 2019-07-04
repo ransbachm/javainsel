@@ -18,6 +18,7 @@ public class VocaloidComparator implements Comparator<Vocaloid>  {
 	}
 	
 	@Override public int compare(Vocaloid v1, Vocaloid v2) {
+		//System.out.println("Comparator is running! "+ v1 + " " + v2);
 		return Double.compare(v1.height, v2.height);
 		
 	}
