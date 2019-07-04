@@ -1,6 +1,8 @@
 package com.insel.chapter10;
 
 import java.awt.Color;
+import java.util.Arrays;
+import java.util.jar.Attributes.Name;
 
 public class Vocaloid implements Cloneable {
 	
@@ -93,9 +95,11 @@ public class Vocaloid implements Cloneable {
 		System.out.printf("Rin == Miku : %b%n", rin.equals(miku));
 		System.out.printf("Len == Rin : %b%n", len.equals(rin)); //Irgendwie schon...
 		System.out.printf("Rin2 == Rin : %b%n", rin2.equals(rin));
-		System.out.printf("Miku2 == Rin2 : %b%n", miku2.equals(rin2));
+		System.out.printf("Miku2 == Rin2 : %b%n%n", miku2.equals(rin2));
 		
-		
+		Vocaloid[] lineup = {rin, len, miku, miku, len, rin};
+		Arrays.sort(lineup, new VocaloidComparator());
+		System.out.println(Arrays.toString(lineup));
 	}
 	
 
