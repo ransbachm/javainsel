@@ -9,4 +9,7 @@ public class Util {
 		System.out.println(random(null, "Hi!"));
 		
 	}
+	public static <E extends Comparable<E>> E min(E o1, E o2) {
+		return o1.compareTo(o2) > 0 ? o2 : o1;
+	}
 }
