@@ -9,7 +9,7 @@ import java.util.*;
 
 public class Cool {
 	public static void main(String [] args) {
-		
+		//TODO Check if should be removed
 		LinkedList<String> l = new LinkedList<String>();
 		
 		String regex = "(?:.+?)?(?:\\/v\\/|watch\\/|\\?v=|\\&v=|youtu\\.be\\/|\\/v=|^youtu\\.be\\/)([a-zA-Z0-9_-]{11})+";
