@@ -43,6 +43,9 @@ public class CoinSorter {
 	
 	public static void main(String [] args) {
 		int value = getValue();
+		if(value<1) {
+			return;
+		}
 		System.out.println(value);
 		System.out.println(getInCoins(value));
 		
