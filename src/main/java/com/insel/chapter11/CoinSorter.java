@@ -20,7 +20,7 @@ public class CoinSorter {
 				
 				if(c.getValue() > value) {
 					coins.remove(i);
-					continue;
+					break;
 				}
 				list.add(c);
 				value -= c.getValue();
