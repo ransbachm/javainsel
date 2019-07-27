@@ -3,15 +3,10 @@ package com.insel.chapter11;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Scanner;
 
 public class CoinSorter {
-	public static void main(String [] args) {
-		int[] valueRaw = new int[] {17, 43};
-		int value = euroToCent(valueRaw);
-		System.out.println(value);
-		System.out.println(getInCoins(value));
-		
-	}
+	
 	public static List<Coin> getInCoins(int value) {
 		List<Coin> list = new LinkedList<>();
 		List<Coin> coins = new LinkedList<>(Arrays.asList(Coin.values()));
@@ -32,8 +27,25 @@ public class CoinSorter {
 				System.out.println();
 		}
 	}
+	
 	public static int euroToCent(int ... c) {
 		return (c[0]*100) + c[1];
+	}
+	
+	public static int getValue() {
+		Scanner scan = new Scanner(System.in);
+		int[] valueRaw = new int[] {scan.nextInt(), scan.nextInt()};
+		scan.close();
+		scan = null;
+		
+		return euroToCent(valueRaw);
+	}
+	
+	public static void main(String [] args) {
+		int value = getValue();
+		System.out.println(value);
+		System.out.println(getInCoins(value));
+		
 	}
 }
 
