@@ -12,15 +12,13 @@ public class CoinSorter {
 	public static List<Coin> getInCoins(int value) {
 		List<Coin> list = new LinkedList<>();
 		List<Coin> coins = new LinkedList<>(Arrays.asList(Coin.values()));
-		
 		while(true) {
-			for(int i=0; i<coins.size(); i++) {
-				Coin c = coins.get(i);
+				Coin c = coins.get(0);
 				System.out.printf("%s %d%n", c.toString(), value);
 				
 				if(c.getValue() > value) {
-					coins.remove(i);
-					break;
+					coins.remove(0);
+					continue;
 				}
 				list.add(c);
 				value -= c.getValue();
@@ -29,8 +27,6 @@ public class CoinSorter {
 					return list;
 				}
 				System.out.println();
-				break;
-			}
 		}
 	}
 }
