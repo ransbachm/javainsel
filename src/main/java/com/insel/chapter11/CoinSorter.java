@@ -6,7 +6,10 @@ import java.util.List;
 
 public class CoinSorter {
 	public static void main(String [] args) {
-		System.out.println(getInCoins(1231));
+		int[] valueRaw = new int[] {17, 43};
+		int value = euroToCent(valueRaw);
+		System.out.println(value);
+		System.out.println(getInCoins(value));
 		
 	}
 	public static List<Coin> getInCoins(int value) {
@@ -28,6 +31,9 @@ public class CoinSorter {
 				}
 				System.out.println();
 		}
+	}
+	public static int euroToCent(int ... c) {
+		return (c[0]*100) + c[1];
 	}
 }
 
