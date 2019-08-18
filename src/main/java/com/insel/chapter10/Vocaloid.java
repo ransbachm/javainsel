@@ -2,7 +2,6 @@ package com.insel.chapter10;
 
 import java.awt.Color;
 import java.util.Arrays;
-import java.util.jar.Attributes.Name;
 
 public class Vocaloid implements Cloneable {
 	

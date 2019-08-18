@@ -1,7 +1,5 @@
 package com.insel.chapter10;
 
-import java.awt.Color;
-
 public enum Rating {
 	SS, S, A, B, C, D, F;
 	
