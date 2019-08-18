@@ -5,6 +5,7 @@ public class toUppercaseWriter {
 		
 		System.out.println("Type your String:");
 		
+		@SuppressWarnings("resource")
 		String input = new java.util.Scanner(System.in).nextLine();
 		
 		System.out.println(toUppercase(input));
