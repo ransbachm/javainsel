@@ -59,7 +59,7 @@ public class ImageDeleter {
 			double goTo = (double) 16/9;
 			double give = 0.1;
 			
-			System.out.printf("%f%f", goTo+give, goTo-give);
+			//System.out.printf("%f%f", goTo+give, goTo-give);
 			
 			if(ratio >goTo+give || ratio < goTo-give) {
 				unscaled = true;
