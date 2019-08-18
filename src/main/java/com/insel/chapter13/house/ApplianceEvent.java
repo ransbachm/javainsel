@@ -4,7 +4,6 @@ import java.util.EventObject;
 
 @SuppressWarnings("serial")
 public class ApplianceEvent extends EventObject {
-	private Appliance tm;
 
 	public ApplianceEvent(Object source, Appliance a) {
 		super(source);
