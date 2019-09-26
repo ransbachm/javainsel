@@ -25,13 +25,29 @@ public class NevadaList {
 		 	.map(StringBuilder::toString)
 		 	.collect(Collectors.toList());
 		 
-		 //use iterator
+		 // use iterator
 		 ListIterator<String> iterator = list2.listIterator();
 		 iterator.add("##PneumaticTokyo##");
 		 iterator.next();
 		 iterator.remove();
 		 
-		 String[] s = list2.toArray(new String[list2.size()]);
+		 String[] s = list2.toArray(new String[list2.size()]); 
+		 
+		 /*
+		  * Do not confuse the type of an Arrray with the type of it's content
+		  * toArray() -> Object[] returns an Object[] this is an array of objects
+		  * This array can cointain Strings because they are Objects
+		  * The Array is still of type Object
+		  * Its not possible to cast that to a String[] because an Object is not a String
+		  * Therefore you would have to create a new Array of type String[]
+		  * 
+		  * This is why there is toArray(T[] a) -> T[]
+		  * This method uses Reflection, you can give it an Array of the desired return type
+		  * and it will give you an array of the same type as return value
+		  * 
+		  * If you match the sizes, the method will just use the array you gave it
+		  * This is better for performance
+		  */
 		 
 		 System.out.println(Arrays.toString(s));
 		 
