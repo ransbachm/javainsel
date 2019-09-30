@@ -22,7 +22,7 @@ public class WaybackList {
 		
 		System.out.printf("Add P1 1. time: %b%n", hS.add(p1)); // Success -> true
 		System.out.printf("Add P1 2. time: %b%n", hS.add(p1)); // Already there (== and equals) -> false
-		System.out.printf("Add P2 1. time: %b%n", hS.add(p2)); // Already there (only equals) -> flase
+		System.out.printf("Add P2 1. time: %b%n", hS.add(p2)); // Already there (only equals) -> false
 		
 		System.out.printf("Set contains : P1[%b]  P2[%b]", hS.contains(p1), hS.contains(p2));
 		//Both true because the Point in the Set equals both points (only == with p1)
