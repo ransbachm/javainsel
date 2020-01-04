@@ -1,0 +1,36 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:element name="OSU" type="osuType"/>
+	
+	<xsd:complexType name="osuType">
+		
+		<xsd:sequence>
+			<xsd:element name="beatmaps" type="beatmapsType"/>
+		</xsd:sequence>
+		<xsd:attribute name="version" type="xsd:string"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="beatmapsType">
+		<xsd:sequence>
+			<xsd:element name="beatmap" type="beatmapType" maxOccurs="unbounded" />
+		</xsd:sequence>
+		<xsd:attribute name="count" type="xsd:int"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="beatmapType">
+		<xsd:attribute name="name" type="xsd:string"/>
+		<xsd:attribute name="artist" type="xsd:string"/>
+		<xsd:attribute name="difficulty" type="xsd:float"/>
+		<xsd:attribute name="bestGrade" type="gradeType"/>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="gradeType">
+			<xsd:restriction base="xsd:string">
+				<xsd:pattern value="(SS|S|A|B|C|D|F)"></xsd:pattern>
+			</xsd:restriction>
+	</xsd:simpleType>
+
+
+
+
+</xsd:schema>

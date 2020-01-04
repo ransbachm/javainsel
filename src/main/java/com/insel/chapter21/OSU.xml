@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE OSU [
+<!ELEMENT OSU (beatmaps) >
+<!ATTLIST OSU version CDATA #REQUIRED>
+
+<!ELEMENT beatmaps (beatmap*)>
+<!ATTLIST beatmaps count CDATA #REQUIRED>
+
+<!ELEMENT beatmap EMPTY>
+<!ATTLIST beatmap name CDATA #REQUIRED artist CDATA #REQUIRED 
+difficulty CDATA #REQUIRED bestGrade CDATA #IMPLIED>
+]>
+
+
+<!-- Example Game Data -->
+<OSU version="Stable 20191227.3">
+	<beatmaps count="3">
+		<!-- Note: 'bestGrade' is missing on first element -->
+		<beatmap name="Highscore" artist="Teminite &amp; Panda Eyes" difficulty="7.37"/>
+		<beatmap name="404 Not Found" artist="Reol" difficulty="5.33" bestGrade="S"/>
+		<beatmap name="Brain Power" artist="NOMA" difficulty="6.21" bestGrade="A"/>
+	</beatmaps>
+</OSU>
+
+
