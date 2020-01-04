@@ -18,6 +18,7 @@ public class RandomDataFile {
 		while((r.length() > r.getFilePointer() ? data = r.readByte() : -1) != -1) {
 			if(data != 0) {
 				System.out.println("Non null byte was found !" + (char) data);
+				r.close();
 				return;
 			}
 			System.out.println(data);

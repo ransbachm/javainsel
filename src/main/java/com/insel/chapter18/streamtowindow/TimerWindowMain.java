@@ -1,7 +1,6 @@
 package com.insel.chapter18.streamtowindow;
 
 import java.io.IOException;
-import java.io.PrintStream;
 
 public class TimerWindowMain implements Runnable {
 	public void run() {
@@ -18,6 +17,13 @@ public class TimerWindowMain implements Runnable {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} finally {
+			try {
+				st.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		//TimerWindow.textArea.append("FIGHT");
 	}
