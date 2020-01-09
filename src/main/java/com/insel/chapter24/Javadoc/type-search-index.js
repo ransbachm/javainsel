@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.insel.chapter24","l":"Book"},{"p":"com.insel.chapter24","l":"SeeTheAutocomplete"}]
