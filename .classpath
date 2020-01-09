@@ -13,5 +13,7 @@
 	<classpathentry kind="lib" path="lib/jaxb-runtime-2.4.0-b180830.0438.jar"/>
 	<classpathentry kind="lib" path="lib/jaxws-rt-2.3.3-b01.jar"/>
 	<classpathentry kind="lib" path="lib/istack-commons-runtime-3.0.10.jar"/>
+	<classpathentry kind="lib" path="lib/jna-5.5.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
