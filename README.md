@@ -1,2 +1,2 @@
 # javainsel
-Java example classes, byproduct of learning java.
+Java example classes.
